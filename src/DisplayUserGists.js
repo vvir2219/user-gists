@@ -13,9 +13,9 @@ function GistsSearch({onClick}) {
   }
 
   return (
-    <div>
-      <input type="text" placeholder='Search user gists...' value={searchTerm} onChange={e => setSearchTerm(e.target.value)}/>
-      <input type="button" value="Search" onClick={submit} />
+    <div className="height-55 bg-primary py-2 d-flex justify-content-center">
+      <input className="px-3 mx-3 flex-grow-1 round-10" type="text" placeholder='Search user gists...' value={searchTerm} onChange={e => setSearchTerm(e.target.value)}/>
+      <input className="mx-3" type="button" value="Search" onClick={submit} />
     </div>
   )
 }
